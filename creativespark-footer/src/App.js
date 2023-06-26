@@ -1,10 +1,11 @@
 import footerLogo from "./assets/images/footer-logo.svg";
 import backToTop from "./assets/images/back-to-top.svg";
 import submit from "./assets/images/submit.svg";
-import Facebook from "./assets/images/Facebook.svg";
-import Instagram from "./assets/images/Instagram.svg";
-import Twitter from "./assets/images/Twitter.svg";
+
 import "./index.css";
+import ServicesBlock from "./components/FooterBlocks/ServicesBlock";
+import AboutBlock from "./components/FooterBlocks/AboutBlock";
+import SocialMedia from "./components/FooterBlocks/SocialMedia";
 
 function App() {
   return (
@@ -33,59 +34,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="services-block">
-          <ul>
-            <li class="li-title">Services</li>
-            <li>
-              <a href="#top">Email Marketing</a>
-            </li>
-            <li>
-              <a href="#top">Campaigns</a>
-            </li>
-            <li>
-              <a href="#top">Branding</a>
-            </li>
-            <li>
-              <a href="#top">Offline</a>
-            </li>
-          </ul>
-        </div>
-        <div class="about-block">
-          <ul>
-            <li class="li-title">About</li>
-            <li>
-              <a href="#top">Our Story</a>
-            </li>
-            <li>
-              <a href="#top">Benefits</a>
-            </li>
-            <li>
-              <a href="#top">Team</a>
-            </li>
-            <li>
-              <a href="#top">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btn-socialMedia">
-          <div class="back-to-top-btn">
+        <ServicesBlock />
+        <AboutBlock />
+        <SocialMedia>
+          <div className="back-to-top-btn">
             <a href="#top">
               <img src={backToTop} alt="back To Top" />
             </a>
           </div>
-          <div class="socialMedia">
-            <a href="#top">
-              <img src={Facebook} alt="Facebook" />
-            </a>
-            <a href="#top">
-              <img src={Twitter} alt="Twitter" />
-            </a>
-
-            <a href="#top">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-          </div>
-        </div>
+        </SocialMedia>
       </div>
     </footer>
   );
