@@ -1,0 +1,8 @@
+.button {
+  font-family: sans-serif;
+  width: 100px;
+  height: 40px;
+  background-color: #8da077;
+  color: #d8dfd1;
+  border-radius: 5px;
+}
