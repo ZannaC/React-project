@@ -1,10 +1,5 @@
-import React from "react";
+import ExpenseItem from "./otherCodeOptions/ExpenseItem2";
 
-import NewExpense from "./components/NewExpense/NewExpense";
-import Expenses from "./components/Expenses/Expenses";
-
-// Arrow function
-// const App = () => { ...
 function App() {
   const expenses = [
     {
@@ -28,17 +23,13 @@ function App() {
     },
   ];
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, "Let's get started!"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
-
   return (
     <div>
-      <NewExpense />
-      <Expenses items={expenses} />
+      <h2>Let's get started!</h2>
+      <ExpenseItem expense={expenses[0]}></ExpenseItem>
+      <ExpenseItem expense={expenses[1]}></ExpenseItem>
+      <ExpenseItem expense={expenses[2]}></ExpenseItem>
+      <ExpenseItem expense={expenses[3]}></ExpenseItem>
     </div>
   );
 }
