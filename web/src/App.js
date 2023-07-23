@@ -3,6 +3,7 @@ import stateImage from "./assets/images/state.png";
 import eventsImage from "./assets/images/events.png";
 import Header from "./components/Header/Header";
 import Concept from "./components/Concept/Concept";
+import ClickOn from "./components/Click/ClickOn";
 
 const concepts = [
   {
@@ -46,6 +47,7 @@ function App() {
           description={concepts[2].description}
         />
       </ul>
+      <ClickOn />
     </div>
   );
 }
